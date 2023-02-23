@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <link rel="icon" href="static/logos/PlanMeal.png">
+    <title>PlanMeal</title>
+</head>
+
+<body>
+
+    <main class="app">
+        <div class="home-view">
+            <div class="home-wrapper">
+                <h1 class="welcome">placeholder</h1>
+            </div>
+        </div>
+        <div class="generate-view">
+            <div class="setup">
+                <h1 class="setup-title">Let's Get Started</h1>
+                <p class="setup-text">Complete the steps to start planning <br>your meals</p>
+                <button id="start-setup-btn">Get Started</button>
+            </div>
+            <div class="setup-meals">
+                <h1 class="setup-meals-title">What Food Do You Enjoy?</h1>
+                <div class="add-meal-container">
+                    <input type="text" id="meal-input" placeholder="Enter Meal One At A Time">
+                    <button id="add-meal-btn"><span id="add-meal-plus-icon" class="material-symbols-outlined">add</span></button>
+                </div>
+                <p class="meals-title">Your Meals:</p>
+                <ul id="user-menu">
+                    
+                </ul>
+                <button id="finish-setup-btn">Finish Setup</button>
+            </div>
+            <div class="generate-wrapper">
+                <button id="generate-btn"><span id="generate-icon" class="material-symbols-outlined">add</span></button>
+                <h3>Today's Meal:</h3>
+                <h1 class="generateMealText"></h1>
+                <p class="generateExtraText">Click Again To Regenerate</p>
+            </div>
+        </div>
+        <div class="settings-view">
+            <div class="settings-wrapper">
+                <div class="settings-info">
+                    <span id="settings-profile-picture" class="material-symbols-outlined">account_circle</span>
+                    <div class="account-info">
+                        <div class="details">
+                            <h1 class="account-name">placeholder</h1>
+                            <p class="creation-date"></p>
+                        </div>
+                        <button class="edit-account-btn">Edit Account</button>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="preferences">
+                        <span id="newsletter-toggle" class="material-symbols-outlined">toggle_on</span>
+                        <p class="preferences-text">Recieve Newsletter Emails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-account-view">
+                <div class="edit-wrapper">
+                    <h1 class="edit-account-title">Edit Account</h1>
+                    <div class="username-setting">
+                        <span id="username-lock" class="material-symbols-outlined">lock</span>
+                        <p class="username-setting-text">Change Username</p>
+                        <input type='text' placeholder="New Username" id="editUsernameField">
+                        <button id="confirm-username"><span id="un-icon" class="material-symbols-outlined">done</span></button>
+                    </div>
+                    <div class="password-setting">
+                        <span id="password-lock" class="material-symbols-outlined">lock</span>
+                        <p class="password-setting-text">Change Password</p>
+                        <input type='password' placeholder="New Password" id="editPasswordField">
+                        <button id="confirm-password"><span id="pass-icon" class="material-symbols-outlined">done</span></button>
+                    </div>
+                    <div class="delete-setting">
+                        <span id="delete-lock" class="material-symbols-outlined">lock</span>
+                        <p class="username-setting-text">Delete Account</p>
+                        <button id="confirm-deletion"><span id="del-icon" class="material-symbols-outlined">done</span></button>
+                    </div>
+                    <button id="complete-changes-btn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><button class="home"><span class="material-symbols-outlined">home</span></button></li>
+                <li><button class="generate"><span class="material-symbols-outlined">add_circle</span></button></li>
+                <li><button class="settings"><span class="material-symbols-outlined">settings</span></button></li>
+            </ul>
+        </nav>
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
